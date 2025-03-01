@@ -10,7 +10,7 @@
 }
 
 :root {
-    --main-color: #2196f3;
+    --main-color: #407BFF;
     --main-color-alt: #1787e0;
     --main-transition: 00.3s;
     --main-padding-top: 50px;
@@ -367,3 +367,64 @@ nav {
 @media (min-width: 1200px) {
 }
 /* End Hero Section */
+
+
+/* Start Aboute Me Section */
+.aboute {
+    margin-top: 3rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.aboute .aboute-content {
+    text-align: justify;
+}
+.aboute .aboute-content h3 {
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+}
+.aboute .aboute-content p {
+    line-height: normal; 
+    max-width: 80rem; 
+    word-wrap: break-word; 
+
+}
+
+.aboute .image {
+    width: 100%;
+    height: 100%;
+}
+.aboute .image  img {
+    width: 450px;
+    height: 450px;
+    margin-left: 25px;
+    margin-right: 5rem;
+}
+@media (max-width: 823px) {
+    .aboute {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .aboute {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+    .aboute .image  {
+        /* margin-top: 2rem; */
+        /* text-align: center; */
+    }
+    .aboute .image  img {
+        margin: 0;
+        width: 330px;
+        height: 330px;
+    }
+    /*medium*/
+}
+/* End Aboute Me Section */
