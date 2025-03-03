@@ -263,7 +263,7 @@ nav {
 
 
 /* Start Hero Section */
-.container {
+.container-web {
     padding: 10px 2rem;
 
 }
@@ -280,8 +280,8 @@ nav {
 .hero .image  img {
     width: 500px;
     height: 500px;
-    margin-left: 25px;
-    margin-right: 5rem;
+    /* margin-left: 25px;
+    margin-right: 5rem; */
 }
 .hero .content {
     display: flex;
@@ -346,7 +346,10 @@ nav {
         text-align: center;
     }
     .hero .image  {
-        /* text-align: center; */
+        display: flex
+        ;
+                align-items: center;
+                justify-content: center;
     }
     .hero .image  img {
         margin: 0;
@@ -399,8 +402,8 @@ nav {
 .aboute .image  img {
     width: 450px;
     height: 450px;
-    margin-left: 25px;
-    margin-right: 5rem;
+    /* margin-left: 25px;
+    margin-right: 5rem; */
 }
 @media (max-width: 823px) {
     .aboute {
@@ -417,8 +420,10 @@ nav {
         gap: 2rem;
     }
     .aboute .image  {
-        /* margin-top: 2rem; */
-        /* text-align: center; */
+        display: flex
+        ;
+                align-items: center;
+                justify-content: center;
     }
     .aboute .image  img {
         margin: 0;
@@ -428,3 +433,60 @@ nav {
     /*medium*/
 }
 /* End Aboute Me Section */
+/* Start Service Section */
+.service h2 {
+    text-align: center;
+    padding: 10px;
+    font-size: 28px;
+}
+.service .swaper-service {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+.service .swaper-card {
+    background-color: var(--main-background);
+    padding: 10px;
+    border: 1px solid #3333331f;
+    box-shadow: 0px 0px 5px 1px #1f29371c;
+
+}
+    .service .swaper-card .content {
+        padding: 10px;
+    }
+    .service .swaper-card .content h2 {
+        font-size: 18px;
+    }
+    .service .swaper-card .content a{
+        padding: 8px;
+        background-color: var(--main-color);
+        color: var(--main-background);
+        margin-top: 8px;
+        display: block;
+        text-align: center;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        transform-style: preserve-3d;
+        perspective: 1000px;
+    }
+
+
+
+    /* تأثير الهوفر الجميل */
+    .service .swaper-card {
+    position: relative;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    }
+
+    .service .swaper-card:hover {
+    transform: translateY(-5px) scale(1);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    }
+    .service .swaper-card a:hover {
+    transform: translateY(-0.2px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+/* End Service Me Section */
