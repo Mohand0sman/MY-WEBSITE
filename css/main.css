@@ -166,6 +166,7 @@ nav {
 
 .nav-media .hidden {
     position: absolute;
+    display: block;
     top: 20px;
     left: 20px;
     font-size: 30px;
@@ -489,4 +490,82 @@ nav {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
     }
 
-/* End Service Me Section */
+/* End Service  Section */
+/* Start Projects Section */
+
+.projects h2 {
+    text-align: center;
+    padding: 10px;
+    font-size: 28px;
+}
+.projects .swaper-projects {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+.projects .swaper-card {
+    background-color: var(--main-background);
+    padding: 10px;
+    border: 1px solid #3333331f;
+    box-shadow: 0px 0px 5px 1px #1f29371c;
+
+}
+    .projects .swaper-card .content {
+        padding: 10px;
+    }
+    .projects .swaper-card .content h2 {
+        font-size: 18px;
+    }
+    .projects .swaper-card .content a{
+        padding: 8px;
+        background-color: var(--main-color);
+        color: var(--main-background);
+        margin-top: 8px;
+        display: block;
+        text-align: center;
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        transform-style: preserve-3d;
+        perspective: 1000px;
+    }
+    /* تأثير الهوفر الجميل */
+    .projects .swaper-card {
+    position: relative;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    }
+
+    .projects .swaper-card:hover {
+    transform: translateY(-5px) scale(1);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    }
+    .projects .swaper-card a:hover {
+    transform: translateY(-0.2px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    /* غرض و اخفاء ازرار عرض التطبيقات و الويب  */
+
+    .projects-tabs {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        margin-top: 15px;
+        gap: 20px;
+    }
+    .tab-btn {
+        padding: 10px 20px;
+        background: #f3f4f6;
+        border: none;
+        cursor: pointer;
+        /* border-radius: 10px; */
+        transition: var(--main-transition);
+        color: black;
+    }
+    .tab-btn.activ {
+        color: var(--main-black-color);
+        /* font-weight: bold; */
+        border-bottom: 2px solid var(--main-color-alt);
+    }
+/* End Projects Section */

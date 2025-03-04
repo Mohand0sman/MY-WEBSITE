@@ -6,17 +6,13 @@
     <title>My WebSite</title>
     <link rel="stylesheet" href="css/main.css">
     <link href="css/fontawesome.css" rel="stylesheet" />
-    <link href="css/brands.css" rel="stylesheet" />
-    <link href="css/solid.css" rel="stylesheet" />
-    <link href="css/sharp-thin.css" rel="stylesheet" />
-    <link href="css/duotone-thin.css" rel="stylesheet" />
-    <link href="css/sharp-duotone-thin.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- تحميل Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <!-- تحميل Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
 
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     </head>
@@ -29,8 +25,8 @@
             <ul>
                 <li><a href="#">الرئيسية</a></li>
                 <li><a href="#aboute_me">عني</a></li>
-                <li><a href="#">المشاريع</a></li>
-                <li><a href="#">الخدمات</a></li>
+                <li><a href="#_service">الخدمات</a></li>
+                <li><a href="#_projects">المشاريع</a></li>
                 <li><a href="#">تواصل معي</a></li>
             </ul>
         </div>
@@ -49,8 +45,8 @@
         <ul>
             <li><a href="#">الرئيسية</a></li>
             <li><a href="#aboute_me">عني</a></li>
-            <li><a href="#">المشاريع</a></li>
-            <li><a href="#">الخدمات</a></li>
+            <li><a href="#_service">الخدمات</a></li>
+            <li><a href="#_projects">المشاريع</a></li>
             <li><a href="#">تواصل معي</a></li>
         </ul>
         <div class="cv-media">
@@ -86,9 +82,9 @@
     <!-- Start Section Aboute Me -->
         <section>
         <div class="container-web">
-            <div class="aboute">
+            <div id="aboute_me" class="aboute">
                 <div class="aboute-content">
-                    <h3 id="aboute_me" >نبذة عني</h3>
+                    <h3  >نبذة عني</h3>
                     <p>أنا مهند عثمان أدم، مهندس برمجيات متخصص في تطوير Full Stack . أقدم خدمات تطوير ويب شاملة باستخدام أحدث التقنيات والأدوات لضمان تجربة مستخدم ممتازة وأداء موثوق به.
 
                         في الواجهة الأمامية (Front-End)، أجمع بين Bootstrap، CSS، HTML، JavaScript، و jQuery، مع إضافة Tailwind CSS لتصميم متجاوب وجذاب.
@@ -105,10 +101,10 @@
         </section>
     <!-- End Section Aboute Me -->
     <!-- Start Section Servicess -->
-        <section class="bg-gray-100">
-            <div class="container-web ">
+        <section id="_service" class="bg-gray-100">
+            <div  class="container-web ">
                 <div class="service">
-                    <h2>خدماتي</h2>
+                    <h2 >خدماتي</h2>
                     <div class="swaper-service">
                         <div class="swaper-card">
                             <div class="swiper mySwiper">
@@ -116,8 +112,18 @@
                                   <div class="swiper-slide">
                                     <img src="images/Devices-amico.png" class="w-full h-48 object-cover" alt="خدمة 1 صورة 1" />
                                   </div>
+                                </div>
+                                <div class="content">
+                                    <h3>نقوم بتصميم مواقع احترافية ومتجاوبة مع جميع الأجهزة.</h3>
+                                    <a href="#">عرض المزيد</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swaper-card">
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
                                   <div class="swiper-slide">
-                                    <img src="images/Developer activity-bro.png" class="w-full h-48 object-cover" alt="خدمة 1 صورة 2" />
+                                    <img src="images/Devices-amico.png" class="w-full h-48 object-cover" alt="خدمة 1 صورة 1" />
                                   </div>
                                 </div>
                                 <div class="content">
@@ -132,9 +138,6 @@
                                   <div class="swiper-slide">
                                     <img src="images/Devices-amico.png" class="w-full h-48 object-cover" alt="خدمة 1 صورة 1" />
                                   </div>
-                                  <div class="swiper-slide">
-                                    <img src="images/Developer activity-bro.png" class="w-full h-48 object-cover" alt="خدمة 1 صورة 2" />
-                                  </div>
                                 </div>
                                 <div class="content">
                                     <h3>نقوم بتصميم مواقع احترافية ومتجاوبة مع جميع الأجهزة.</h3>
@@ -147,25 +150,6 @@
                                 <div class="swiper-wrapper">
                                   <div class="swiper-slide">
                                     <img src="images/Devices-amico.png" class="w-full h-48 object-cover" alt="خدمة 1 صورة 1" />
-                                  </div>
-                                  <div class="swiper-slide">
-                                    <img src="images/Developer activity-bro.png" class="w-full h-48 object-cover" alt="خدمة 1 صورة 2" />
-                                  </div>
-                                </div>
-                                <div class="content">
-                                    <h3>نقوم بتصميم مواقع احترافية ومتجاوبة مع جميع الأجهزة.</h3>
-                                    <a href="#">عرض المزيد</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swaper-card">
-                            <div class="swiper mySwiper">
-                                <div class="swiper-wrapper">
-                                  <div class="swiper-slide">
-                                    <img src="images/Devices-amico.png" class="w-full h-48 object-cover" alt="خدمة 1 صورة 1" />
-                                  </div>
-                                  <div class="swiper-slide">
-                                    <img src="images/Developer activity-bro.png" class="w-full h-48 object-cover" alt="خدمة 1 صورة 2" />
                                   </div>
                                 </div>
                                 <div class="content">
@@ -179,40 +163,95 @@
             </div>
         </section>
     <!-- Start Section Servicess -->
+    <!-- Start Section Projects -->
+    <section id="_projects">
+        <div class="container-web">
+            <div  class="projects">
+                <h2 >مشاريعي</h2>
+                <div class="projects-tabs">
+                    <button class="tab-btn activ " onclick="filterProjects('web', this)" data-type="web">مشاريع الويب</button>
+                    <button class="tab-btn  " onclick="filterProjects('apps', this)" data-type="apps">مشاريع التطبيقات</button>
+                </div>
+                <div class="swaper-projects">
+                    <div class="swaper-card swaper-c web">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/Code snippets-cuate.png" class="w-full h-48 object-cover" alt="موقع تجارة إلكترونية" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/Data extraction-amico.png" class="w-full h-48 object-cover" alt="موقع تجارة إلكترونية" />
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h3>موقع تجارة إلكترونية</h3>
+                                <a href="#">عرض المزيد</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swaper-card swaper-c web">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/Code snippets-cuate.png" class="w-full h-48 object-cover" alt="موقع تجارة إلكترونية" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/Data extraction-amico.png" class="w-full h-48 object-cover" alt="موقع تجارة إلكترونية" />
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h3>موقع تجارة إلكترونية</h3>
+                                <a href="#">عرض المزيد</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swaper-card swaper-c web">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/Code snippets-cuate.png" class="w-full h-48 object-cover" alt="موقع تجارة إلكترونية" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/Data extraction-amico.png" class="w-full h-48 object-cover" alt="موقع تجارة إلكترونية" />
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h3>موقع تجارة إلكترونية</h3>
+                                <a href="#">عرض المزيد</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swaper-card swaper-c apps">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/Cloud hosting-rafiki.png" class="w-full h-48 object-cover" alt="تطبيق طلبات الطعام" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/Code snippets-amico.png" class="w-full h-48 object-cover" alt="تطبيق طلبات الطعام" />
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h3>تطبيق طلبات الطعام</h3>
+                                <a href="#">عرض المزيد</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Section Projects -->
     <script src="js/main.js"></script>
     <script src="js/all.min.js"></script>
     <script src="js/brands.js"></script>
     <script src="js/brands.min.js"></script>
-    <script src="js/conflict-detection.js"></script>
-    <script src="js/conflict-detection.min.js"></script>
     <script src="js/fontawesome.min.js"></script>
     <script src="js/regular.js"></script>
     <script src="js/regular.min.js"></script>
-    <script src="js/"></script>
-    <script src="js/"></script>
 
     <!-- تحميل Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-    // تفعيل Swiper لكل عنصر يحمل الكلاس mySwiper
-    document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('.mySwiper').forEach(function(swiperEl) {
-        new Swiper(swiperEl, {
-        slidesPerView: 1,
-        loop: true,
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-        },
-        // إذا أردت تفعيل Pagination داخل الكاردات
-        // pagination: {
-        //   el: swiperEl.querySelector('.swiper-pagination'),
-        //   clickable: true,
-        // },
-        });
-    });
-    });
-    </script>
+
     </body>
     </html>
