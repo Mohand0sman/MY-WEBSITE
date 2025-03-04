@@ -277,7 +277,12 @@ nav {
 .hero .image {
     width: 100%;
     height: 100%;
+    display: flex
+    ;
+        align-items: center;
+        justify-content: center;
 }
+
 .hero .image  img {
     width: 500px;
     height: 500px;
@@ -349,8 +354,8 @@ nav {
     .hero .image  {
         display: flex
         ;
-                align-items: center;
-                justify-content: center;
+            align-items: center;
+            justify-content: center;
     }
     .hero .image  img {
         margin: 0;
@@ -435,10 +440,17 @@ nav {
 }
 /* End Aboute Me Section */
 /* Start Service Section */
+#_service .containers {
+    padding-bottom: 3rem;
+}
 .service h2 {
-    text-align: center;
-    padding: 10px;
-    font-size: 28px;
+    padding-top: 20px;
+
+    font-weight: bold;
+    font-size: 40px;
+    width: fit-content;
+    position: relative;
+    margin: 0px auto 50px;
 }
 .service .swaper-service {
     margin-top: 2rem;
@@ -461,7 +473,7 @@ nav {
     }
     .service .swaper-card .content a{
         padding: 8px;
-        background-color: var(--main-color);
+        background-color: var(--main-black-color);
         color: var(--main-background);
         margin-top: 8px;
         display: block;
@@ -494,9 +506,13 @@ nav {
 /* Start Projects Section */
 
 .projects h2 {
-    text-align: center;
-    padding: 10px;
-    font-size: 28px;
+    font-weight: bold;
+    font-size: 40px;
+    padding-top: 20px;
+
+    width: fit-content;
+    position: relative;
+    margin: 0px auto 50px;
 }
 .projects .swaper-projects {
     margin-top: 2rem;
@@ -519,7 +535,7 @@ nav {
     }
     .projects .swaper-card .content a{
         padding: 8px;
-        background-color: var(--main-color);
+        background-color: var(--main-black-color);
         color: var(--main-background);
         margin-top: 8px;
         display: block;
@@ -569,3 +585,155 @@ nav {
         border-bottom: 2px solid var(--main-color-alt);
     }
 /* End Projects Section */
+
+/* Start Contact With Me Section */
+
+/* .contactWithMe h2 {
+    text-align: center;
+    padding: 10px;
+    font-size: 28px;
+}
+.contactWithMe .contct-boxs {
+    margin-top: 2rem;
+    display: grid
+;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+
+}
+.contactWithMe .contct-boxs .box {
+    background-color: var(--main-background);
+    padding: 10px;
+    border: 1px solid #3333331f;
+    box-shadow: 0px 0px 5px 1px #1f29371c;
+    display: flex ;
+    width: fit-content;
+    align-items: center;
+    flex-direction: column;
+}
+.contactWithMe .contct-boxs .box .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.contactWithMe .contct-boxs .box .image img {
+    border-radius: 50%;
+    width: 120px;
+    object-fit: cover;
+    height: 120px;
+    
+} */
+/* End Contact With Me Section */
+
+/*Start Stats*/
+.containers {
+    padding-left: 30px;
+    padding-right: 30px;
+        padding-top: 20px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+.stats {
+    position: relative;
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+    background-image: url(../image-templat-3/stats.jpg);
+    background-size: cover;
+    min-height: 300px;
+}
+
+.stats::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.stats h2 {
+    font-weight: bold;
+    font-size: 40px;
+    width: fit-content;
+    position: relative;
+    margin: 0px auto 50px;
+}
+
+.stats .containers {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    align-items: center;
+}
+
+
+.stats .box {
+    
+    background-color: var(--main-background);
+    text-align: center;    box-shadow: 0px 0px 5px 1px #1f29371c;
+    position: relative;
+    opacity: 0.8;
+    padding: 30px 15px;
+    transition: var(--main-transition);
+}
+.stats .box .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.stats .box img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-align: center;
+}
+.stats .box:hover {
+    opacity: 1;
+}
+
+.stats .box::before {
+    right: 0px;
+    top: 0px;
+}
+
+.stats .box::after {
+    left: 0px;
+    bottom: 0px;
+}
+
+.stats .box::before,
+.stats .box::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    background-color: var(--main-color);
+    height: 0px;
+    transition: all 1s ease 0s;
+}
+
+.stats .box:hover::before,
+.stats .box:hover::after {
+    height: 100%;
+}
+
+.stats .box .number {
+    display: block;
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--main-black-color);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.stats .box .text {
+    color: var(--main-color);
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/*End Stats*/
