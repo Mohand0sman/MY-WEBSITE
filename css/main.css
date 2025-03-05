@@ -507,7 +507,7 @@ nav {
 
 .projects h2 {
     font-weight: bold;
-    font-size: 40px;
+    font-size: 32px;
     padding-top: 20px;
 
     width: fit-content;
@@ -656,7 +656,7 @@ nav {
 
 .stats h2 {
     font-weight: bold;
-    font-size: 40px;
+    font-size: 32px;
     width: fit-content;
     position: relative;
     margin: 0px auto 50px;
@@ -675,7 +675,7 @@ nav {
     background-color: var(--main-background);
     text-align: center;    box-shadow: 0px 0px 5px 1px #1f29371c;
     position: relative;
-    opacity: 0.8;
+    opacity: 0.9;
     padding: 30px 15px;
     transition: var(--main-transition);
 }
@@ -721,7 +721,7 @@ nav {
 
 .stats .box .number {
     display: block;
-    font-size: 32px;
+    font-size: 26px;
     font-weight: bold;
     color: var(--main-black-color);
     margin-top: 10px;
@@ -737,3 +737,52 @@ nav {
 
 
 /*End Stats*/
+/*Start Footer */
+footer  {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px -6px 6px 0px #6b7280;
+    padding: 2rem;
+    background-color: var(--main-background);
+    position: static;
+    bottom:  0;
+    z-index: 998;
+}
+.copyright {
+    box-shadow: 0px -6px 6px 0px #6b7280;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    /*  */
+    box-shadow: 0px -6px 6px 0px #374151a3;
+}
+.copyright p {
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+.copyright .fa-heart {
+    color: #ff002d;
+}
+@media (max-width: 768px) {
+    .copyright {
+        box-shadow: 0px -6px 6px 0px #6b7280;
+    
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        /*  */
+        box-shadow: 0px -6px 6px 0px #374151a3;
+        display: flex
+    ;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 13px;
+        justify-content: center;
+        padding: 20px;
+    }
+    /*medium*/
+}
+/*End Footer */
