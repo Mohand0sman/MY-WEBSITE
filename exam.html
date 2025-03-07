@@ -1,0 +1,83 @@
+<section>
+    <div class="container-web">
+        <div class="projects">
+            <h2>مشاريعي</h2>
+            <div class="projects-tabs">
+                <button class="tab-btn active" onclick="filterProjects('web', this)" data-type="web">مشاريع الويب</button>
+                <button class="tab-btn" onclick="filterProjects('apps', this)" data-type="apps">مشاريع التطبيقات</button>
+            </div>
+            <div class="swaper-projects">
+                @php
+                    $projects = [
+                        (object) ['title' => 'موقع تجارة إلكترونية', 'type' => 'web', 'images' => ['project1-1.jpg', 'project1-2.jpg']],
+                        (object) ['title' => 'تطبيق طلبات الطعام', 'type' => 'apps', 'images' => ['project2-1.jpg', 'project2-2.jpg']],
+                        (object) ['title' => 'موقع شخصي', 'type' => 'web', 'images' => ['project3-1.jpg', 'project3-2.jpg']],
+                        (object) ['title' => 'تطبيق توصيل الطلبات', 'type' => 'apps', 'images' => ['project4-1.jpg', 'project4-2.jpg']]
+                    ];
+                @endphp
+                @foreach($projects as $project)
+                    <div class="swaper-card {{ $project->type }}">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                @foreach($project->images as $image)
+                                    <div class="swiper-slide">
+                                        <img src="{{ asset('images/' . $image) }}" class="w-full h-48 object-cover" alt="{{ $project->title }}" />
+                                    </div>
+                                @endforeach
+                            </div>
+                            <div class="content">
+                                <h3>{{ $project->title }}</h3>
+                                <a href="#">عرض المزيد</a>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+function filterProjects(type, btn) {
+    let cards = document.querySelectorAll('.swaper-card');
+    let buttons = document.querySelectorAll('.tab-btn');
+    
+    buttons.forEach(button => button.classList.remove('active'));
+    btn.classList.add('active');
+
+    cards.forEach(card => {
+        card.style.display = 'none';
+        if (card.classList.contains(type)) {
+            card.style.display = 'block';
+        }
+    });
+}
+
+// لتفعيل عرض مشاريع الويب كخيار افتراضي عند تحميل الصفحة
+document.addEventListener("DOMContentLoaded", function() {
+    filterProjects('web', document.querySelector('.tab-btn.active'));
+});
+</script>
+
+<style>
+.projects-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+.tab-btn {
+    padding: 10px 20px;
+    background: #f1f1f1;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.tab-btn.active {
+    background: #333;
+    color: #fff;
+    font-weight: bold;
+    transform: scale(1.1);
+}
+</style>
